@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  color: $main-text-color;
+  background-color: $main-bg-color;
+  box-sizing: border-box;
+}
+/*blocked scroll when open  mobile menu*/
+@media screen and (max-width: 767px) {
+  body.lock {
+    overflow: hidden;
+  }
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0;
+  min-width: 320px;
+
+  @media screen and (min-width: 480px) {
+    //@error width: 480px;
+  }
+  @media screen and (min-width: 767px) {
+    // width: 767px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    //width: 1440px;
+  }
+}
+
+.main {
+  margin: 0 auto;
+  padding-top: 80px;
+}
+@media screen and (max-width: 767px) {
+  .main {
+    padding-top: 50px;
+  }
+}
+
+.list {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  padding: 0;
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.visualy-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+}
+/*
+
+.flex-container {
+  display: flex;
+}
+
+
+/////////////////////////////
+/*
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+%container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+%block-social-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 206px;
+  height: 44px;
+}
+%button {
+  font-family: inherit;
+  background-color: $active-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $white-text-color;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $second-active-color;
+  }
+}
+@mixin flex-container($justify: flex-start, $align: stretch) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+@mixin position-container_top_left($pos, $t, $l, $h, $w) {
+  position: $pos;
+  top: $t;
+  left: $l;
+  height: $h;
+  width: $w;
+}
+@mixin position-container_top_right($pos, $t, $r, $h, $w) {
+  position: $pos;
+  top: $t;
+  right: $r;
+  height: $h;
+  width: $w;
+}
+@mixin position-container_bottom($pos, $b, $h, $w) {
+  position: $pos;
+  bottom: $b;
+  height: $h;
+  width: $w;
+}
+*/

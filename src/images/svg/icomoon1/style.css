@@ -1,0 +1,64 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.amazon {
+  width: 3.3076171875em;
+}
+
+.code {
+  width: 2.26171875em;
+}
+
+.dwave {
+  width: 1.51171875em;
+}
+
+.fb {
+  width: 6.2724609375em;
+}
+
+.fcc {
+  width: 7.2001953125em;
+}
+
+.G {
+  width: 0.900390625em;
+}
+
+.gitlab {
+  width: 3.2080078125em;
+}
+
+.google {
+  width: 2.9658203125em;
+}
+
+.intel {
+  width: 1.51953125em;
+}
+
+.logo {
+  width: 3.275390625em;
+}
+
+.theia {
+  width: 8.1171875em;
+}
+
+.uber {
+  width: 2.87890625em;
+}

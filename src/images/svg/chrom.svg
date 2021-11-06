@@ -1,0 +1,98 @@
+//
+Strokes get ignored when generating fonts or CSH files.
+You may convert them to fills <https://icomoon.io/#docs/stroke-to-fill>
+and reimport your SVG(s).
+Dismiss
+// Menu
+
+  * //Manage Projects <#/projects>
+  * //New Empty Set
+  * //New Set From Selection
+  * //Clear Selection (2)
+  * //Icon Library <#/select/library>
+  * //Sign In
+    <https://icomoon.io/#login#redirect#https%3A%2F%2Ficomoon.io%2Fapp>
+  * //Documentation <https://icomoon.io/#docs>
+  * //Sign Out <https://i.icomoon.io/logout>
+
+// ImportIcons
+// <#/select/library>
+//
+
+//
+
+// Preferences
+
+// Reset
+
+Size: Auto
+// Preferences
+
+// select
+
+// delete
+
+// move
+
+// edit
+
+/
+
+/ //
+//
+
+// Undo
+
+// Redo
+
+Untitled Project// <#/projects>
+//Hi! <https://icomoon.io/#hi/r3f04>
+//Sign In
+<https://icomoon.io/#login#redirect#https%3A%2F%2Ficomoon.io%2Fapp>
+
+
+  Untitled Set
+  // Menu
+
+    * Properties//
+    * Import to Set//
+    * Move Up//
+    * Move Down//
+    * Select All/Deselect//
+    * Download JSON//
+    * Duplicate Selection Here//
+    * Move Selection Here//
+    * Rearrange Icons//
+    * Remove Set//
+
+#set0 .icon { width: 72px; height: 72px } #set0 .icon-wide { width:
+156px; } #set0 .icon svg { font-size: 32px; margin-left: 20px;
+margin-top: 20px; } /*#set0 .icon svg { -moz-transform: scale(0.03125,
+0.03125); transform: scale(0.03125, 0.03125); }*/ #set0 { display:
+inherit; }
+
+
+  IcoMoon - Free
+  // Menu
+
+    * Properties//
+    * Import to Set//
+    * Move Up//
+    * Move Down//
+    * Select All/Deselect//
+    * Download JSON//
+    * Duplicate Selection Here//
+    * Move Selection Here//
+    * Rearrange Icons//
+    * Remove Set//
+
+#set1 .icon { width: 72px; height: 72px } #set1 .icon-wide { width:
+156px; } #set1 .icon svg { font-size: 32px; margin-left: 20px;
+margin-top: 20px; } /*#set1 .icon svg { -moz-transform: scale(0.03125,
+0.03125); transform: scale(0.03125, 0.03125); }*/ #set1 { display:
+inherit; }
+
+// Add Icons From Library… <#/select/library>
+
+//Generate SVG, …& More <#/select/image>Selection (2)Generate Font//
+<#/select/font>
