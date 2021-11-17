@@ -4,23 +4,29 @@
   left: 0;
   width: 100%;
   z-index: 50;
-}
-
-.header::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   background-color: $main-bg-color;
-  z-index: 2;
+  background-color: $second-bg-color;
+  border-bottom: 2px solid $second-bg-color;
+
+  //margin: 0 auto;
+}
+.header.scroll {
+  border-bottom: 2px solid #e1e1e1;
 }
 
 .container {
-  max-width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
+  min-width: 320px;
+
+  @media screen and (min-width: 768px) {
+    padding: 0 30px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 1440px;
+    padding: 0 65px;
+  }
 }
 
 /*---------------------body---------------*/
@@ -60,35 +66,53 @@
   flex-direction: row;
   position: relative;
   z-index: 2;
+
+  & li {
+    margin-left: 20px;
+    padding: 0 5px;
+    position: relative;
+  }
 }
-.header__list li {
-  margin-left: 20px;
-}
+
 .header__link {
+  display: inline-block;
+  position: relative;
   color: $secondary-text-color;
   font-size: 16px;
   line-height: 24px;
   cursor: pointer;
-}
-.header__link:hover {
-  color: $main-text-color;
-}
-.login__btn {
-  display: block;
-  padding: 6px 22px;
-  border-radius: 15px;
-  border: none;
-  color: $third-text-color;
-  background-color: $main-text-color;
-  font-size: 14px;
-  line-height: 20px;
-  z-index: 2;
+
+  &:hover {
+    color: $main-text-color;
+  }
+  &.active_link::after {
+    content: '';
+    background-color: $btn-bg-color-first;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    right: 0;
+    top: 0;
+  }
+  & .login__btn {
+    display: block;
+    padding: 6px 22px;
+    border-radius: 15px;
+    border: none;
+    color: $third-text-color;
+    background-color: $main-text-color;
+    font-size: 14px;
+    line-height: 20px;
+    z-index: 2;
+  }
 }
 .login__btn:hover {
   background-color: $secondary-text-color;
 }
 
 @media screen and (max-width: 767px) {
+  /*--------------------------burger-------------*/
   .header__burger {
     display: block;
     position: relative;
@@ -144,6 +168,7 @@
     bottom: 9px;
   }
 
+  /**-----------------------------menu-------------*/
   .header__menu {
     position: fixed;
     top: -150%;
@@ -152,9 +177,9 @@
     // height: 100%;
     height: 400px;
     //overflow: scroll;
-    transition: all 0.3s ease 0s;
+    // transition: all 0.3s ease 0s;
     padding: 70px 10px 20px 10px;
-    background-color: $second-bg-color;
+    background-color: $third-bg-color;
   }
   .header__menu.active {
     top: 0;

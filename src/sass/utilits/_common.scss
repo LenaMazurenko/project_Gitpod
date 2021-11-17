@@ -18,28 +18,20 @@ body {
 
 .wrapper {
   margin: 0 auto;
-  padding: 0;
+  padding: 0 5px;
   min-width: 320px;
 
   @media screen and (min-width: 480px) {
-    //@error width: 480px;
+    // width: 480px;
   }
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
+    padding: 0 30px;
     // width: 767px;
   }
 
   @media screen and (min-width: 1440px) {
-    //width: 1440px;
-  }
-}
-
-.main {
-  margin: 0 auto;
-  padding-top: 80px;
-}
-@media screen and (max-width: 767px) {
-  .main {
-    padding-top: 50px;
+    max-width: 1440px;
+    padding: 0 65px;
   }
 }
 

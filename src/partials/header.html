@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header" id="header">
   <div class="container">
     <div class="header__body">
       <a class="header__logo" href="index.html">
@@ -9,15 +9,16 @@
       </button>
       <nav class="header__menu">
         <ul class="header__list list">
-          <li><a class="header__link" href="#">Features</a></li>
-          <li><a class="header__link" href="#">Pricing</a></li>
-          <li><a class="header__link" href="#">Blog</a></li>
-          <li><a class="header__link" href="#">Docs</a></li>
-          <li><a class="header__link" href="#">Changelog</a></li>
-          <li><a class="header__link" href="#">We're hiring</a></li>
+          <li><a class="header__link active_link" href="#header">Features</a></li>
+          <li><a class="header__link" href="#hero">Pricing</a></li>
+          <li><a class="header__link" href="#start">Blog</a></li>
+          <li><a class="header__link" href="#used">Docs</a></li>
+          <li><a class="header__link" href="#getstarted">Changelog</a></li>
+          <li><a class="header__link" href="#footer">We're hiring</a></li>
         </ul>
       </nav>
       <button class="login__btn" type="button">login</button>
     </div>
   </div>
 </header>
+<!-- якорные ссылки меню закреплены за секциями т.к полная версия сайта подразумевает переход на другие страницы сайта, а реализована лишь одна в виде SPA-->
