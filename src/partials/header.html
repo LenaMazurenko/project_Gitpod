@@ -17,8 +17,100 @@
           <li><a class="header__link" href="#footer">We're hiring</a></li>
         </ul>
       </nav>
-      <button class="login__btn" type="button">login</button>
+      <button class="login__btn" type="button" data-modal-open>login</button>
     </div>
   </div>
 </header>
 <!-- якорные ссылки меню закреплены за секциями т.к полная версия сайта подразумевает переход на другие страницы сайта, а реализована лишь одна в виде SPA-->
+
+<!-- modal Window -->
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal-login">
+    <button class="btn__close" type="button" data-modal-close>
+      <svg width="30" height="30">
+        <use href="./images/svg/sprite.svg#close"></use>
+      </svg>
+    </button>
+
+    <!-- form Log in -->
+    <form class="modal-login__form active">
+      <h2 class="form__title">Log in</h2>
+
+      <div class="form__element">
+        <label class="form__label" for="email">Email</label>
+        <input
+          class="form__input"
+          id="email"
+          type="email"
+          name="email"
+          placeholder="Enter e-mail...."
+        />
+      </div>
+
+      <div class="form__element">
+        <label class="form__label" for="password">Password</label>
+        <input
+          class="form__input"
+          id="password"
+          type="password"
+          name="password"
+          placeholder="Enter password...."
+        />
+      </div>
+
+      <div class="form__element">
+        <button class="btn__submit" type="submit">Отправить</button>
+      </div>
+
+      <div class="form-element">
+        <a id="to_signup" href="#signup"> Sign Up </a>
+      </div>
+    </form>
+
+    <!-- form Sign up -->
+    <form class="modal-signup__form" id="signup">
+      <h2 class="form__title">Sign up</h2>
+
+      <div class="form__element">
+        <label class="form__label" for="email">Email</label>
+        <input
+          class="form__input"
+          id="email"
+          type="email"
+          name="email"
+          placeholder="Enter e-mail...."
+        />
+      </div>
+
+      <div class="form__element">
+        <label class="form__label" for="password">Password</label>
+        <input
+          class="form__input"
+          id="password"
+          type="password"
+          name="password"
+          placeholder="Enter password...."
+        />
+      </div>
+
+      <div class="form__element">
+        <label class="form__label" for="password">Password</label>
+        <input
+          class="form__input"
+          id="password"
+          type="password"
+          name="password"
+          placeholder="Repeat password...."
+        />
+      </div>
+
+      <div class="form__element">
+        <button class="btn__submit" type="submit">Отправить</button>
+      </div>
+
+      <div class="form-element">
+        <a href="#"> Forgot password? </a>
+      </div>
+    </form>
+  </div>
+</div>
