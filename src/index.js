@@ -1,4 +1,6 @@
 import './sass/main.scss';
+
+/*------------------------------*/
 const refs = {
   mobMenuBtn: document.querySelector('.header__burger'),
   headerMenu: document.querySelector('.header__menu'),
